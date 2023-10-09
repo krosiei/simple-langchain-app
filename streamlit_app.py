@@ -9,4 +9,3 @@ st.write("For more details, take a look at this workshop's [walkthrough](https:/
 
 # Uncomment the line below to add a text field, and type "streamlit run streamlit_app.py" in the terminal to see the changes.
 
-streamlit run streamlit_app.py
