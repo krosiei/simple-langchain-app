@@ -12,7 +12,7 @@ from langchain.prompts import (
 )
 
 
-st.set_page_config(page_title="LangChain: Chat with search", page_icon="🦜")
+st.set_page_config(page_title="LangChain: Chat with search", page_icon="👻")
 st.title("Chat")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
@@ -23,7 +23,7 @@ llm_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
             # This prompt tells the chatbot how to respond. Try modifying it.
-            "Your name is samuel. You love talking about soccer. Respond to the user like an ordinary person would."
+            "Your name is joe. You love talking about halloween. Respond to the user like an ordinary person would."
         ),
         MessagesPlaceholder(variable_name="chat_history"),
         HumanMessagePromptTemplate.from_template("{message}")
